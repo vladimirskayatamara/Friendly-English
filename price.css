@@ -271,10 +271,19 @@ line-height: 22px;
   border: 1px solid #b58282;
   border-radius: 30px;
   background-color: #FFFFFF;
-  padding: 14px;
-  width: 60vw;
+  padding: 5x;
+  width: 45vw;
   height: 45px;
   text-align: center;
+}
+.open-button:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #b58282;
+}
+.open-button:focus{
+  background-color: #704242;
+  color: #fff;
 }
 .form-body{
   width: 490px;
@@ -284,12 +293,13 @@ line-height: 22px;
   padding: 33px 39px;
   display: none;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-  position: absolute;
+  position: fixed;
   display: none;
   justify-self: center;
   z-index: 5;
   font-family: 'Raleway', sans-serif;
   border-radius: 15px;
+  bottom: 10%;
 } 
 .form-body h3{
   text-align: center;
@@ -440,7 +450,9 @@ input[type=checkbox]:checked:after {
   .content{
     margin: 2em auto;
   }
-  
+  .form-body{
+    bottom: 12%;
+  }
 }
     
 @media screen and (max-width: 767px){
@@ -476,6 +488,9 @@ input[type=checkbox]:checked:after {
   }
   .price{
     font-size: 1.5em; 
+  }
+  .open-button{
+    width: 47vw;
   }
 
 }
@@ -534,9 +549,17 @@ input[type=checkbox]:checked:after {
   font-size: 1.2em;
   text-align: center;
 }
+.open-button span{
+  font-size: 0;
+}
+.open-button span::after{
+  content: "ЗАПИСАТЬСЯ";
+  font-size: 14px;
+}
 .form-body{
   width: 320px;
   height: 515px;
+  bottom: 8%;
 }
 .name, .number, .form-body button {
     width: 243px;

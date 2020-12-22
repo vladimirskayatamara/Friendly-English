@@ -800,6 +800,13 @@ h1{
     font-size: 15px;
     height: 60px;
   }
+  .footer-button span{
+    font-size: 0;
+  }
+  .footer-button span::after{
+    content:"ПАКЕТЫ УРОКОВ";
+    font-size: 16px;
+  }
   footer::after{
     display: none;
   }

@@ -564,6 +564,6 @@ input[type=checkbox]:checked:after {
 }
 .name, .number, .form-body button {
     width: 243px;
-    height: 51px;
+    height: 35px;
   }
 }

@@ -516,6 +516,7 @@ input[type=checkbox]:checked:after {
   .menu-box{
     z-index: 3;
     width: 200px;
+    height: 320px;
   }
   .nav-links{
     margin-right: 1em;

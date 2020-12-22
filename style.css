@@ -319,7 +319,7 @@ input[type=checkbox]:checked:after {
   margin: auto;
 }
 .main-image{
-  background-image: url(images/red-bus.png);
+  background-image: url(images/red-bus.jp2);
   background-size: cover;
   width: 540px;
   height: 430px;
@@ -514,7 +514,7 @@ footer p{
   margin-bottom: 2em;
 }
 footer::after{
-  content: url(images/footer-teacher.png);
+  content: url(images/footer-teacher.jp2);
   display: flex;
   height: 205px;
   width: 151px;

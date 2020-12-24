@@ -16,6 +16,9 @@
   a{
     text-decoration: none;
   } 
+  button, input{
+    outline: none;
+  }
 
 
 .header-content{
@@ -36,6 +39,7 @@
 .logo-link a{
   display: flex;
   color: #635c5b;
+  margin-bottom: 10px;
 }
 .logo-img{
   margin-right: 16px;
@@ -51,6 +55,10 @@
   color: #788891;
 }
 /*hamburger menu*/
+.hamburger-menu{
+  visibility: hidden;
+}
+
 #menu-toggle {
   opacity: 0;
 }
@@ -271,10 +279,19 @@ line-height: 22px;
   border: 1px solid #b58282;
   border-radius: 30px;
   background-color: #FFFFFF;
-  padding: 14px;
-  width: 60vw;
+  padding: 5x;
+  width: 55vw;
   height: 45px;
   text-align: center;
+}
+.open-button:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #b58282;
+}
+.open-button:focus{
+  background-color: #704242;
+  color: #fff;
 }
 .form-body{
   width: 490px;
@@ -286,10 +303,10 @@ line-height: 22px;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   position: absolute;
   display: none;
-  justify-self: center;
   z-index: 5;
   font-family: 'Raleway', sans-serif;
   border-radius: 15px;
+  margin: 50% auto 0 auto;
 } 
 .form-body h3{
   text-align: center;
@@ -406,6 +423,9 @@ input[type=checkbox]:checked:after {
   }
  
 @media screen and (min-width: 768px) and (max-width: 992px){
+  .hamburger-menu{
+    visibility: visible;
+  }
   .navbar{
     justify-content: flex-end;
   }
@@ -440,10 +460,14 @@ input[type=checkbox]:checked:after {
   .content{
     margin: 2em auto;
   }
-  
+  .form-body{
+    bottom: 12%;
+  }
+
 }
     
 @media screen and (max-width: 767px){
+  
   .navbar{
     justify-content: flex-end;
   }
@@ -455,6 +479,9 @@ input[type=checkbox]:checked:after {
   }
   .nav-links a{
     margin-right: 1em;
+  }
+  .hamburger-menu{
+    visibility: visible;
   }
   .menu-btn{
     top: 47px;
@@ -476,6 +503,9 @@ input[type=checkbox]:checked:after {
   }
   .price{
     font-size: 1.5em; 
+  }
+  .open-button{
+    width: 47vw;
   }
 
 }
@@ -501,6 +531,7 @@ input[type=checkbox]:checked:after {
   .menu-box{
     z-index: 3;
     width: 200px;
+    height: 320px;
   }
   .nav-links{
     margin-right: 1em;
@@ -534,12 +565,20 @@ input[type=checkbox]:checked:after {
   font-size: 1.2em;
   text-align: center;
 }
+.open-button span{
+  font-size: 0;
+}
+.open-button span::after{
+  content: "ЗАПИСАТЬСЯ";
+  font-size: 14px;
+}
 .form-body{
   width: 320px;
   height: 515px;
+  bottom: 8%;
 }
 .name, .number, .form-body button {
     width: 243px;
-    height: 51px;
+    height: 35px;
   }
 }

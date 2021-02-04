@@ -90,7 +90,7 @@
   height: 26px;
   cursor: pointer;
   z-index: 4;
-  top: 50px;
+  top: 55px;
 }
 .menu-btn > span,
 .menu-btn > span::after {
@@ -123,7 +123,6 @@
   list-style: none;
   background-color: #b58282;
   transition-duration: .25s;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   z-index: 3;
   height: 300px;
 }
@@ -300,13 +299,11 @@ line-height: 22px;
   color: #fff;
   padding: 33px 39px;
   display: none;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   position: absolute;
   display: none;
   z-index: 5;
   font-family: 'Raleway', sans-serif;
   border-radius: 15px;
-  margin: 50% auto 0 auto;
 } 
 .form-body h3{
   text-align: center;
@@ -421,7 +418,11 @@ input[type=checkbox]:checked:after {
   color: #FFFFFF;
   margin-top: 1em;;
   }
+  .form-body button:hover{
+    background-color: #fff;
+  }
  
+
 @media screen and (min-width: 768px) and (max-width: 992px){
   .hamburger-menu{
     visibility: visible;
@@ -574,8 +575,9 @@ input[type=checkbox]:checked:after {
 }
 .form-body{
   width: 320px;
-  height: 515px;
-  bottom: 8%;
+  height: 475px;
+  position: relative;
+  margin-bottom: 5%;
 }
 .name, .number, .form-body button {
     width: 243px;
